@@ -55,15 +55,21 @@ module.exports = {
                 })
             },
             {
-                test: /^_.+\.s[ac]ss$/,
-                loaders: ['sass-loader']
-            },
-            {
                 test: /\.s[ac]ss$/,
                 loaders: extractStyles.extract({
                     fallback: 'style-loader',
-                    use: ['css-loader', 'sass-loader']
-                })
+                    use: [
+                        {
+                            loader: 'css-loader'
+                        },
+                        {
+                            loader: 'sass-loader',
+                            options: {
+                                includePaths: ["./node_modules/bootstrap-sass/assets/stylesheets"]
+                            }
+                        }
+                    ]
+                }),
             },
             {
                 test: /\.html$/,
@@ -72,14 +78,17 @@ module.exports = {
         ]
     },
     resolve: {
-        alias: {
-            'bootstrap': 'bootstrap-sass'
-        },
         extensions: ['.js', '.json', '.scss', '.sass', '.css'],
         mainFiles: ['index'],
         modules: ['node_modules']
     },
     plugins: [
+        new webpack.NormalModuleReplacementPlugin(
+            /bootstrap\/variables$/,
+            function (resource) {
+                console.log(resource.request);
+            }
+        ),
         new HtmlPlugin({
             filename: 'index.html',
             template: './views/index.html'
