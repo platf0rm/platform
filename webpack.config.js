@@ -55,6 +55,10 @@ module.exports = {
                 })
             },
             {
+                test: /^_.+\.s[ac]ss$/,
+                loaders: ['sass-loader']
+            },
+            {
                 test: /\.s[ac]ss$/,
                 loaders: extractStyles.extract({
                     fallback: 'style-loader',
@@ -68,6 +72,9 @@ module.exports = {
         ]
     },
     resolve: {
+        alias: {
+            'bootstrap': 'bootstrap-sass'
+        },
         extensions: ['.js', '.json', '.scss', '.sass', '.css'],
         mainFiles: ['index'],
         modules: ['node_modules']

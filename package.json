@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/platf0rm/platform#readme",
   "dependencies": {
-    "bootstrap-material-design": "^0.5.10"
+    "bootstrap-material-design": "^0.5.10",
+    "bootstrap-sass": "^3.3.7"
   }
 }
