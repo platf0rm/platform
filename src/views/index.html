@@ -4,87 +4,52 @@
   <meta charset="UTF-8">
   <title>Platform</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
-<body>
-<header class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a href="/" class="navbar-brand">
-        Platform
-      </a>
-    </div>
-    <div class="navbar-collapse collapse navbar-responsive-collapse">
-      <nav class="navbar-left">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#home" data-toggle="tab">Hot</a></li>
-          <li><a href="#profile" data-toggle="tab">Trending</a></li>
-        </ul>
-      </nav>
-    </div>
+<body class="platform-body mdc-typography">
+
+<header class="mdc-toolbar mdc-toolbar--fixed platform-header">
+  <div class="mdc-layout__header-row">
+    <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+      <div class="mdc-toolbar__title">Platform</div>
+    </section>
   </div>
 </header>
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-8 col-md-push-4">
-      <main class="main page-body">
-        <div class="media">
-          <div class="media-left">
-            <a href="#">
-              <img src="http://placehold.it/64" alt="Image" class="media-object">
-            </a>
-          </div>
-          <div class="media-body">
-            <h2 class="media-heading">Media heading</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod aliquam.</p>
-          </div>
-        </div>
-        <div class="media">
-          <div class="media-left">
-            <a href="#">
-              <img src="http://placehold.it/64" alt="Image" class="media-object">
-            </a>
-          </div>
-          <div class="media-body">
-            <h2 class="media-heading">Media heading</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod aliquam.</p>
-          </div>
-        </div>
-        <div class="media">
-          <div class="media-left">
-            <a href="#">
-              <img src="http://placehold.it/64" alt="Image" class="media-object">
-            </a>
-          </div>
-          <div class="media-body">
-            <h2 class="media-heading">Media heading</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod aliquam.</p>
-          </div>
-        </div>
-      </main>
-    </div>
-    <div class="col-md-4 col-md-pull-8">
-      <aside class="aside page-sidebar">
-        <h2>Sidebar here</h2>
 
-        <nav>
-          <ul class="nav nav-pills nav-stacked">
-            <li><a href="#">Hello</a></li>
-            <li><a href="#">Hello</a></li>
-            <li><a href="#">Hello</a></li>
-            <li><a href="#">Hello</a></li>
-          </ul>
-          <hr>
-          <ul class="nav nav-pills nav-stacked">
-            <li><a href="#">Hello</a></li>
-            <li><a href="#">Hello</a></li>
-          </ul>
-        </nav>
-      </aside>
+<div class="mdc-toolbar-fixed-adjust platform-content">
+  <aside class="mdc-permanent-drawer">
+    <div class="mdc-list-group">
+      <nav class="mdc-list">
+        <a href="#" class="mdc-list-item mdc-permanent-drawer--selected">Henlo</a>
+        <a href="#" class="mdc-list-item">Helllo you stinky web devloper</a>
+        <a href="#" class="mdc-list-item">Go create website uglly</a>
+      </nav>
     </div>
-  </div>
+  </aside>
+
+  <main class="platform-main">
+    <nav class="mdc-list mdc-list--two-line mdc-list--dense">
+      <a href="#" class="mdc-list-item mdc-ripple-upgraded">
+                <span class="mdc-list-item__text">
+                  <span class="mdc-list-item__text__primary">Two-line item</span>
+                  <span class="mdc-list-item__text__secondary">Secondary text</span>
+                </span>
+      </a>
+      <a href="#" class="mdc-list-item mdc-ripple-upgraded">
+                <span class="mdc-list-item__text">
+                  <span class="mdc-list-item__text__primary">Two-line item</span>
+                  <span class="mdc-list-item__text__secondary">Secondary text</span>
+                </span>
+      </a>
+      <a href="#" class="mdc-list-item mdc-ripple-upgraded">
+                <span class="mdc-list-item__text">
+                  <span class="mdc-list-item__text__primary">Two-line item</span>
+                  <span class="mdc-list-item__text__secondary">Secondary text</span>
+                </span>
+      </a>
+    </nav>
+  </main>
 </div>
-<footer class="">
-
-</footer>
 </body>
 </html>

@@ -69,7 +69,7 @@ module.exports = {
                         {
                             loader: 'sass-loader',
                             options: {
-                                includePaths: ["./node_modules/bootstrap-sass/assets/stylesheets"]
+                                includePaths: ["./node_modules"]
                             }
                         }
                     ]
