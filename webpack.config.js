@@ -43,9 +43,13 @@ module.exports = {
                 test: /\.png$/,
                 loaders: ['file-loader?name=[name].[ext]&outputPath=./images/&publicPath=./images/']
             },
+            //{
+            //    test: /\.(eot|svg|ttf|otf|woff2|woff)$/,
+            //    loaders: ['file-loader?name=[name].[ext]&outputPath=./fonts/&publicPath=./fonts/']
+            //},
             {
                 test: /\.(eot|svg|ttf|otf|woff2|woff)$/,
-                loaders: ['file-loader?name=[name].[ext]&outputPath=./fonts/&publicPath=./fonts/']
+                loaders: ['url-loader?limit=10000']
             },
             {
                 test: /\.css$/,
@@ -83,6 +87,10 @@ module.exports = {
         modules: ['node_modules']
     },
     plugins: [
+        new webpack.ProvidePlugin({
+            $: "jquery",
+            jQuery: "jquery"
+        }),
         new webpack.NormalModuleReplacementPlugin(
             /bootstrap\/variables$/,
             function (resource) {
