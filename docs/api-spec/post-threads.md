@@ -1,6 +1,6 @@
 method | endpoint | definition | 
 -------| -------- | ---------- |
-post   | /api/threads/:userId | creates a new thread
+post   | /api/threads/ | creates a new thread
 
 # url params
 `userId` - the user's ID
