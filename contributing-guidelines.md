@@ -15,5 +15,10 @@
 
 *note:* item#5 can be skipped altogether if your changes are too small and you are confident enough with your changes (but please don't break the app)
 
+## Branching
+1. A feature branch (`feature/{feature-name}`) based on `master` shall be created for a feature you'll be working on
+2. The branch should only be worked on by a single developer
+3. For cases where you need to commit changes on an **un-merged** `feature branch`, you should create a new branch based on that `feature branch` and a pull-request should follow
+
 ## Feature suggestion
 Project-specific issues should be created under a specific project. Otherwise, it can be created on the `platform` main repo
