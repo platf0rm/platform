@@ -6,11 +6,13 @@ post   | /api/comment/**{commentID}**/votes | submit vote to a comment
 `commentID`
 
 # request
-```
+```json
 n/a
 ```
 
 # response
-```
-{ "result": "ok" }
+```json
+{
+  "result": "ok" 
+}
 ```

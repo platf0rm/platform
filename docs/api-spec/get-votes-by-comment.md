@@ -6,13 +6,13 @@ get    | /api/comment/**{commentID}**/votes | Gets the number of votes to a comm
 `commentID`
 
 # request
-```
+```json
 n/a
 ```
 
 # response
-```
+```json
 {
-    “count”: “int number of votes”
+    "count": "int number of votes"
 }
 ```

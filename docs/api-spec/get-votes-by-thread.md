@@ -6,13 +6,13 @@ get    | /api/threads/**{threadID}**/votes | Gets the number of votes to a threa
 `threadID`
 
 # request
-```
+```json
 n/a
 ```
 
 # response
-```
+```json
 {
-    “count”: “int number of votes”
+    "count": "int number of votes"
 }
 ```

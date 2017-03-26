@@ -6,11 +6,13 @@ post   | /api/threads/**{threadID}**/votes | submit vote to a thread
 `threadID`
 
 # request
-```
+```json
 n/a
 ```
 
 # response
-```
-{ "result": "ok" }
+```json
+{
+  "result": "ok"
+}
 ```

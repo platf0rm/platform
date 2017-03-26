@@ -7,12 +7,12 @@ get    | /api/threads/**{threadID}**/comment/**{commentID}** | returns a comment
 `commentID`
 
 # request
-```
+```json
 n/a
 ```
 
 # response
-```
+```json
 {
     "id": "unique comment ID",
     "author": "userID",

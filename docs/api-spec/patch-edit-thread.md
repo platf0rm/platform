@@ -31,11 +31,15 @@ Any attribute (except `dateCreated`) is optional to add in the request body. `da
 If *any* post attribute is changed:
 
 ```json
-{ "result": "ok" }
+{
+    "result": "ok"
+}
 ```
 
 If *none* of the post attributes is changed:
 
 ```json
-{ "result": "updated" }
+{
+    "result": "updated"
+}
 ```

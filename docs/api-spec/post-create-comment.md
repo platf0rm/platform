@@ -6,18 +6,18 @@ post   | /api/threads/{threadID}/comments| creates a new comment
 `threadID`
 
 # request
-```
+```json
 {
-    “author”: “userID”,
-    “text”: “string”,
-    “dateCreated”: “integer unix epoch in millis”,
-    “dateUpdated”: “integer unix epoch in millis”
+    "author": "userID",
+    "text": "string",
+    "dateCreated": "integer unix epoch in millis",
+    "dateUpdated": "integer unix epoch in millis"
 }
 ```
 
 # response
-```
+```json
 {
-   “result”: “ok”
+   "result": "ok"
 }
 ```
