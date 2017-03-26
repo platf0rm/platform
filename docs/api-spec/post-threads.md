@@ -1,22 +1,24 @@
 method | endpoint | definition | 
 -------| -------- | ---------- |
-post   | /api/threads/:userId | creates a new thread
+post   | /api/threads/ | creates a new thread
 
 # url params
 `userId` - the user's ID
 
 # request
-```
+```json
 {
-    “title”: “string title of post”,
-    “dateCreated”: “integer unix epoch in millis”,
-    “dateUpdated”: “integer unix epoch in millis”,
-    “description”: “string description of post”,
-    “media”: “int mediaId”
+    "title": "string title of post",
+    "dateCreated": "integer unix epoch in millis",
+    "dateUpdated": "integer unix epoch in millis",
+    "description": "string description of post",
+    "media": "int mediaId"
 }
 ```
 
 # response
-```
-{ “result”: “ok” }
+```json
+{ 
+    "result": "ok" 
+}
 ```
