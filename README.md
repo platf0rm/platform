@@ -9,7 +9,7 @@ A Secure Anonymous Reddit-like Aesthetic Platform
 ## how to contribute
 [Contributing guidelines](https://github.com/platf0rm/platform/blob/master/contributing-guidelines.md)
 
-## api specs
+## documentation
 * [Overview](https://github.com/platf0rm/platform/blob/master/docs/api-spec-overview.md)
 * [Specs](https://github.com/platf0rm/platform/tree/master/docs/api-spec)
 
