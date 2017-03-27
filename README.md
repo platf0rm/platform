@@ -1,13 +1,17 @@
-# Platform
+# platform
+A Secure Anonymous Reddit-like Aesthetic Platform
 
-## Installation
+## repositories
+* [platform-mobile](https://github.com/platf0rm/platf0rm-mobile)
+* [platform-api](https://github.com/platf0rm/platform-api)
+* [platform-web-ui](https://github.com/platf0rm/platform-web-ui)
 
-1. Clone this repo.
-2. Run `npm install`
-3. Run `npm run build`
-4. ???
-5. PROFIT!
+## how to contribute
+[Contributing guidelines](https://github.com/platf0rm/platform/blob/master/contributing-guidelines.md)
 
-## Development
+## documentation
+* [Overview](https://github.com/platf0rm/platform/blob/master/docs/api-spec-overview.md)
+* [Specs](https://github.com/platf0rm/platform/tree/master/docs/api-spec)
 
-Execute `npm run build:watch` to watch front-end components (i.e. scripts and styles).
+## roadmaps
+* [Mobile](https://github.com/platf0rm/platform/blob/master/docs/sprint-plan/mobile-sprint-plan.md)
