@@ -3,7 +3,7 @@ method | endpoint | definition |
 patch  | /api/threads/**{threadID}** | Patches an existing thread for changes
 
 # url params
-`threadID`
+`threadID` - thread UUID
 
 # request
 

@@ -3,7 +3,7 @@ method | endpoint | definition |
 get    | /api/votes/**{postID}** | gets the number of votes to a post (thread, comment)
 
 # url params
-`postID`
+`postID` - thread or comment UUID
 
 # request
 ```json

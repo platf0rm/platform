@@ -3,7 +3,7 @@ method | endpoint | definition |
 patch  | /api/comments/**{commentID}** | Patches an existing comment in an existing for changes
 
 # url params
-`commentID`
+`commentID` - comment UUID
 
 # request
 
