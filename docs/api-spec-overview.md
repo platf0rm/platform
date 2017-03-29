@@ -2,13 +2,12 @@
 
 method | endpoint | definition | 
 -------| -------- | ---------- |
-get    | /api/threads/**{threadID}**/comment/**{commentID}** | returns a comment in a certain thread
-get    | /api/threads/**{threadID}**/comments | returns a comments in a certain thread
-get    | /api/media/**{mediaId}** | gets media details
 get    | /api/threads | get a list of threads
-get    | /api/comment/**{commentID}**/votes | Gets the number of votes to a comment
-get    | /api/threads/**{threadID}**/votes | Gets the number of votes to a thread
-post   | /api/threads/**{threadID}**/comments| creates a new comment
+get    | /api/threads/**{threadID}**/comments | returns a comments in a certain thread
+get    | /api/comments/**{commentID}** | returns a comment
+get    | /api/votes/**{postID** | gets the number of votes to a post (thread, comment)
+get    | /api/media/**{mediaId}** | gets media details
 post   | /api/threads/ | creates a new thread
-post   | /api/comment/**{commentID}**/votes | submit vote to a comment
-post   | /api/threads/**{threadID}**/votes | submit vote to a thread
+post   | /api/threads/**{threadID}**/comments | creates a new comment
+post   | /api/votes/**{postID}**/**{direction}** | cast up/down vote to a post (thread, comment)
+post   | /api/media | create a new media post/attachment
