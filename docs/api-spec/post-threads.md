@@ -3,7 +3,7 @@ method | endpoint | definition |
 post   | /api/threads/ | creates a new thread
 
 # url params
-`userId` - the user's ID
+`userId` - user UUID
 
 # request
 ```json

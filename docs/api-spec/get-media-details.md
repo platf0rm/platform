@@ -3,7 +3,7 @@ method | endpoint | definition |
 get    | /api/media/**{mediaId}** | gets media details
 
 # url params
-`mediaId`
+`mediaId` - media UUID
 
 # request
 ```json

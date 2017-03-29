@@ -1,10 +1,9 @@
 method | endpoint | definition |
 -------| -------- | ---------- |
-patch  | /api/threads/**{threadID}**/comments/**{commentID}** | Patches an existing comment in an existing thread for changes
+patch  | /api/comments/**{commentID}** | Patches an existing comment in an existing for changes
 
 # url params
-- `threadID`
-- `commentID`
+`commentID` - comment UUID
 
 # request
 

@@ -1,9 +1,9 @@
 method | endpoint | definition | 
 -------| -------- | ---------- |
-post   | /api/threads/{threadID}/comments| creates a new comment
+post   | /api/threads/{threadID}/comments | creates a new comment
 
 # url params
-`threadID`
+`threadID` - thread UUID
 
 # request
 ```json

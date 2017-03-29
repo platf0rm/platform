@@ -3,7 +3,7 @@ method | endpoint | definition |
 get    | /api/threads/{threadID}/comments | returns a comments in a certain thread
 
 # url params
-`threadID`
+`threadID` - thread UUID
 
 # request
 ```json

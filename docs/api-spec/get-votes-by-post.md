@@ -1,9 +1,9 @@
 method | endpoint | definition | 
 -------| -------- | ---------- |
-get    | /api/comment/**{commentID}**/votes | Gets the number of votes to a comment
+get    | /api/votes/**{postID}** | gets the number of votes to a post (thread, comment)
 
 # url params
-`commentID`
+`postID` - thread or comment UUID
 
 # request
 ```json
