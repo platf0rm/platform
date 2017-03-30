@@ -1,9 +1,8 @@
 method | endpoint | definition | 
 -------| -------- | ---------- |
-get    | /api/threads/**{threadID}**/comment/**{commentID}** | returns a comment in a certain thread
+get    | /api/comments/**{commentID}** | returns a certain comment
 
 # url params
-`threadID` - thread UUID
 `commentID` - comment UUID
 
 # request

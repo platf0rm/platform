@@ -12,23 +12,26 @@ n/a
 
 # response
 ```json
-[
-  {
-      "id": "unique thread ID",
-      "title": "string title of post",
-      "dateCreated": "integer unix epoch in millis",
-      "dateUpdated": "integer unix epoch in millis",
-      "description": "string description of post",
-      "media": "int mediaId"
-  },
-  {
-      "id": "unique thread ID",
-      "title": "string title of post",
-      "dateCreated": "integer unix epoch in millis",
-      "dateUpdated": "integer unix epoch in millis",
-      "description": "string description of post",
-      "media": "int mediaId"
-  },
-  ...
-]
+{
+    "total": "int number of threads",
+    "threads": [
+        {
+            "id": "unique thread ID",
+            "title": "string title of post",
+            "dateCreated": "integer unix epoch in millis",
+            "dateUpdated": "integer unix epoch in millis",
+            "description": "string description of post",
+            "media": "int mediaId"
+        },
+        {
+            "id": "unique thread ID",
+            "title": "string title of post",
+            "dateCreated": "integer unix epoch in millis",
+            "dateUpdated": "integer unix epoch in millis",
+            "description": "string description of post",
+            "media": "int mediaId"
+        },
+        ...
+    ]
+}
 ```
